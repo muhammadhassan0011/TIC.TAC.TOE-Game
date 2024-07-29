@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe GAME</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        height: 60vh;
+        width: 30rem;
+        border: 1px solid black;
+        box-shadow: 0 0 25px #5f6a6b;
+        text-align: center;
+        overflow: hidden;
+      }
+      .row {
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        border: 1px solid dimgray;
+        border-bottom: none;
+      }
+      .col {
+        width: 10rem;
+        height: 100%;
+        border: 1px solid dimgray;
+        border-bottom: none;
+        cursor: pointer;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0 0 5px #134344;
+      }
+
+      @media screen and (min-width: 340px) and (max-width: 500px) {
+        .container {
+          width: 20rem;
+        }
+        .row {
+          height: 20vh;
+        }
+        .col {
+          font-size: 2.3rem;
+        }
+      }
+      @media screen and (min-width: 240px) and (max-width: 340px) {
+        .container {
+          width: 15rem;
+        }
+        .row {
+          height: 20vh;
+        }
+        .col {
+          font-size: 2.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tic Tac Toe GAME</h1>
+    <p>Duo (2) Players Game</p>
+    <div class="container">
+      <div class="row">
+        <div id="0" class="col"></div>
+        <div id="1" class="col"></div>
+        <div id="2" class="col"></div>
+      </div>
+
+      <div class="row">
+        <div id="3" class="col"></div>
+        <div id="4" class="col"></div>
+        <div id="5" class="col"></div>
+      </div>
+
+      <div class="row">
+        <div id="6" class="col"></div>
+        <div id="7" class="col"></div>
+        <div id="8" class="col"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
